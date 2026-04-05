@@ -1,0 +1,18 @@
+{
+  "name": "llms-txt-rag-compare",
+  "version": "1.0.0",
+  "description": "Compare naive web scraping vs llms.txt-guided indexing for RAG",
+  "type": "module",
+  "main": "compare.js",
+  "scripts": {
+    "compare": "node compare.js",
+    "naive": "node compare.js --mode naive",
+    "llmstxt": "node compare.js --mode llmstxt"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
